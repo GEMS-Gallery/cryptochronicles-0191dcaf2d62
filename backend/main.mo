@@ -3,7 +3,7 @@ import Error "mo:base/Error";
 
 actor GEMS {
     public func generateDesign(prompt : Text) : async Text {
-        // Simplified function that doesn't use HTTP calls
-        return "Generated design based on prompt: " # prompt;
+        // Placeholder response since we can't make HTTP calls
+        return "AI-generated design based on prompt: " # prompt # "\n(Note: Actual AI integration is currently unavailable)";
     };
 }

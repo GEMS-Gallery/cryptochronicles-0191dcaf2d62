@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Container, TextField, Button, CircularProgress } from '@mui/material';
+import { AppBar, Toolbar, Typography, Container, TextField, Button, CircularProgress, Alert } from '@mui/material';
 import { backend } from 'declarations/backend';
 
 const App: React.FC = () => {
@@ -30,6 +30,9 @@ const App: React.FC = () => {
         </Toolbar>
       </AppBar>
       <Container className="container">
+        <Alert severity="info" sx={{ mb: 2 }}>
+          Note: AI-generated designs are currently unavailable. The app will return a placeholder response.
+        </Alert>
         <TextField
           fullWidth
           label="Enter your design prompt"
